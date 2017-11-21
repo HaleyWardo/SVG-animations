@@ -161,6 +161,7 @@ a:hover {
 .corgi li {
   display: flex;
   flex-direction: column;
+  padding-right: 10px;
 }
 
 .corgi span {
