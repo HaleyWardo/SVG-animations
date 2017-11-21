@@ -42,10 +42,13 @@ a {
 ul {
   list-style-type: none;
   display: flex;
+}
+
+.nav-list {
   padding-top: 9px;
 }
 
-li {
+.nav-list li {
   padding-right: 40px;
   font-size: 14px;
 }
@@ -78,7 +81,7 @@ main h2 {
 }
 
 main p {
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 footer {
@@ -94,11 +97,11 @@ footer {
 /*TRANSITIONS */
 /**************/
 
-li {
+.nav-list li {
   transition: .5s ease-in-out;
 }
 
-li:hover {
+.nav-list li:hover {
   transform: scale(1.07);
 }
 
@@ -138,13 +141,40 @@ a:hover {
 /* SVG STYLES */
 /**************/
 
+.paw-logo-text {
+  display: none;
+}
+
+.corgi-svgs {
+  height: auto;
+}
+
+.corgi {
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 850px;
+  margin: 0;
+  padding: 0;
+}
+
+.corgi li {
+  display: flex;
+  flex-direction: column;
+}
+
+.corgi span {
+  font-size: 12px;
+  padding-right: 30px;
+  color:#C96D54;
+}
+
 .svg-logo-text,
 .paw-print {
   fill:#F4C6A6
 }
 
 .sable {
-  color:#A8826B;
+  color:#B78366;
 }
 
 .fawn {
@@ -157,4 +187,22 @@ a:hover {
 
 .stone {
   color:#52595F;
+}
+
+/**************/
+/* MEDIA QUERY*/
+/**************/
+
+@media (max-width: 425px) {
+  .svg-logo-text {
+    display: none;
+  }
+
+  .paw-logo-text {
+    display: block;
+    color:#F4C6A6;
+    margin-bottom: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
 }
