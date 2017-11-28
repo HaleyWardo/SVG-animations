@@ -143,7 +143,15 @@ a:hover {
 /**************/
 
 .paw-logo-text {
-  display: none;
+  display: block;
+}
+
+.paw-logo-text {
+  display: block;
+  color:#F4C6A6;
+  margin-bottom: 0;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .corgi-svgs {
@@ -175,6 +183,10 @@ a:hover {
   fill:#F4C6A6
 }
 
+.svg-logo-text {
+  display: none;
+}
+
 .sable {
   color:#B78366;
 }
@@ -195,16 +207,11 @@ a:hover {
 /* MEDIA QUERY*/
 /**************/
 
-@media (max-width: 425px) {
+@media (min-width: 768px) {
   .svg-logo-text {
-    display: none;
-  }
-
-  .paw-logo-text {
     display: block;
-    color:#F4C6A6;
-    margin-bottom: 0;
-    font-size: 16px;
-    text-transform: uppercase;
+  }
+  .paw-logo-text {
+    display: none;
   }
 }
